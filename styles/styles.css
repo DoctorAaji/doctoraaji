@@ -1,0 +1,153 @@
+
+/* General Styling */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #00796b;
+    color: white;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    max-height: 80px;
+    margin-bottom: 1em;
+}
+
+nav.animated-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+nav.animated-nav .nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+nav.animated-nav .nav-link:hover {
+    background-color: #004d40;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main h1 {
+    color: #004d40;
+    font-weight: 700;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    text-align: justify;
+}
+
+main .cta-button {
+    background: #004d40;
+    color: white;
+    border: none;
+    padding: 0.8em 2em;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+main .cta-button:hover {
+    background: #00796b;
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    background: #004d40;
+    color: white;
+    padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .logo {
+        max-height: 60px;
+        margin-bottom: 1em;
+    }
+
+    nav.animated-nav .nav-link {
+        font-size: 1em;
+        padding: 0.5em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    main .cta-button {
+        font-size: 1em;
+        padding: 0.5em 1.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        max-height: 50px;
+    }
+
+    nav.animated-nav {
+        flex-direction: column;
+        gap: 0.5em;
+    }
+
+    nav.animated-nav .nav-link {
+        font-size: 0.9em;
+        padding: 0.5em;
+    }
+
+    main h1 {
+        font-size: 1.5em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
+
+    main .cta-button {
+        font-size: 0.9em;
+        padding: 0.5em 1em;
+    }
+}
